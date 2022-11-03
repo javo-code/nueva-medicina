@@ -307,65 +307,62 @@ p {
     color: #fff
 }
 
-/*
+/**** SECC SOBRE NOSOTROS ****/
 
-.form-suc {
-    width: 100%;
-    height: 100vh;
-    display: block;
-    background-image: url("../assets/img/sucursales.jpg");
+.main-aboutUs {
+    padding-bottom: 100vh;
+    height: 70vh;
+    background-image: url("../assets/img/aboutUs.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-
 }
 
-.CmbBoxSucursal {
-    height: 2rem;
+.historia p {
+    color: #fff;
+    font-size: 16px;
+    overflow-y: hidden;
 }
- */
-
 
 
 /**** SECC CONTACTO ****/
-/* 
-.container-main-contact form {
-    display: block;
-    background-color: rgb(111, 111, 111, 40%);
-    border: solid grey 1;
-    padding: 30px;
+
+.main-contact {
+    height: 110vh;
+    background-image: url("../assets/img/contacto.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.main-contact form {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.form-contact {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-form {
+    margin-top: 40px;
+    background-color: rgb(255, 94, 0, 30%);
+    padding: 40px;
     border-radius: 30px;
 }
 
-.container-main-contact .form {
-    display: flex;
-    justify-content: center;
+.contact-form p {
+    font-size: medium;
 }
-
-
-.form-contact {
-    height: 50rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-repeat: no-repeat;
-    background-image: url("../assets/img/fondo_contacto.jpg");
-    background-size: cover;
-    background-position: center;
-}
-
- */
-
-
 
 /*********** TABLET 600px ***********/
 
-
 @media (max-width: 600px) {
 
-
     /** NAVBAR - TABLET 600px **/
-
-
 
     .container-navBar {
         height: 7vh;
@@ -458,7 +455,6 @@ p {
         width: 100%;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
-
     }
 
     .prest3 img {
@@ -474,6 +470,8 @@ p {
     }
 
     /**** SECC SUCURSALES - TABLET 600px ****/
+
+
     .main-suc {
         background-image: url("../assets/img/sucursales-tbl.jpg");
         height: 115vh;
@@ -493,16 +491,17 @@ p {
 
     .CmbBoxSucursal {
         margin-top: 10px;
-        font-size: 30px;
+        font-size: 20px;
     }
 
-
+    option {
+        font-size: 12px;
+    }
 
     .videos-suc {
         margin-top: 50px;
         margin-left: 7%;
     }
-
 
     .title {
         width: 93%;
@@ -517,25 +516,55 @@ p {
         font-size: 45px;
     }
 
-    /**** SECC CONTACTO - TABLET 600px ****/
+    /**** SECC ABOUT US - TABLET 600px ****/
 
-    .container-main-contact form {
-        width: 80vw;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background: linear-gradient(rgb(23, 186, 97, 30%), white,
-                rgb(255, 111, 0, 30%));
-        line-height: 20px;
+    .main-aboutUs {
+        padding-bottom: 10px;
+        height: 100vh;
+        background-image: url("../assets/img/aboutUs-tbl.png");
+        background-repeat: no-repeat;
+        background-size: contain;
     }
 
+    .historia-tbl {
+        display: none;
+    }
+
+    .historia p {
+        color: black;
+        font-size: 14px;
+        margin-top: 22vh;
+    }
+
+    /**** SECC CONTACTO - TABLET 600px ****/
+
+    .main-contact {
+        background-image: none;
+        height: 90vh;
+    }
+
+    .main-contact form {
+        width: 80vw;
+        background: linear-gradient(ORANGE, white);
+        line-height: 30px;
+    }
+
+
     .form-contact {
-        margin-top: 3vh;
+        margin-top: 1vh;
         background-image: none;
     }
 
+
+
+    .contact-form {
+        margin-top: 40px;
+        background-color: rgb(255, 94, 0, 30%);
+        padding: 100px;
+    }
+
     input {
-        line-height: 2rem;
+        line-height: 1.5rem;
     }
 
     .select-contact,
@@ -545,95 +574,91 @@ p {
         font-size: 20px;
     }
 
+    /*********** MOBILE 360px ***********/
 
-}
+    /**** NAVBAR - MOBILE 360px ****/
 
-
-
-/*********** MOBILE 360px ***********/
-
-/**** NAVBAR - MOBILE 360px ****/
-
-@media (max-width: 360px) {
+    @media (max-width: 360px) {
 
 
-    .navAnimation {
-        display: none;
-    }
+        .navAnimation {
+            display: none;
+        }
 
-    .container-navBar {
-        height: 10vh;
-        flex-direction: column;
-        align-items: center;
-    }
+        .container-navBar {
+            height: 10vh;
+            flex-direction: column;
+            align-items: center;
+        }
 
 
 
-    .navBar ul {
-        font-family: Georgia, 'Times New Roman', Times, serif;
-    }
+        .navBar ul {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
 
-    .navBar ul li {
-        font-size: 10px;
-    }
+        .navBar ul li {
+            font-size: 10px;
+        }
 
-    .navBar ul li a {
-        color: rgb(255, 94, 0);
+        .navBar ul li a {
+            color: rgb(255, 94, 0);
 
-    }
+        }
 
-    .navImg img {
-        width: 100%;
-        display: flex;
-    }
+        .navImg img {
+            width: 100%;
+            display: flex;
+        }
 
-    .container-prest {
-        display: block;
-    }
+        .container-prest {
+            display: block;
+        }
 
-    .prest1 {
-        margin-top: 4vh;
-    }
+        .prest1 {
+            margin-top: 4vh;
+        }
 
-    .redes {
-        gap: 60px;
-    }
-
-
-    /**** PRESTACIONES - MOBILE 360px ****/
+        .redes {
+            gap: 60px;
+        }
 
 
+        /**** SECC PRESTACIONES - MOBILE 360px ****/
 
-    .grid-prest {
-        height: 87vh;
-        background: linear-gradient(rgb(255, 111, 0), rgb(23, 186, 97));
-        overflow-y: scroll;
-    }
 
-    .prest1 {
-        display: flex;
-        justify-content: center;
-    }
 
-    .prest2 img {
-        display: none;
-    }
+        .grid-prest {
+            height: 87vh;
+            background: linear-gradient(rgb(255, 111, 0), rgb(23, 186, 97));
+            overflow-y: scroll;
+        }
 
-    .prest3 {
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+        .prest1 {
+            display: flex;
+            justify-content: center;
+        }
 
-    }
+        .prest2 img {
+            display: none;
+        }
 
-    .prest3 img {
-        width: 75%;
-        display: flex;
-        margin-left: 32px;
-        border: 2px solid grey;
-        ;
-    }
+        .prest3 {
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(3, 1fr);
 
-    .prest4 {
-        display: none;
+        }
+
+        .prest3 img {
+            width: 75%;
+            display: flex;
+            margin-left: 32px;
+            border: 2px solid grey;
+            ;
+        }
+
+        .prest4 {
+            display: none;
+        }
     }
 }
