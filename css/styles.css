@@ -1,7 +1,17 @@
+/* verde */
+/* nraranja */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section[id] {
+  scroll-margin-top: 50px;
 }
 
 body {
@@ -9,23 +19,45 @@ body {
 }
 
 /*** TOP BAR ***/
-.container-navBar {
+.topheader {
+  position: fixed;
+  left: 0;
+  top: 0;
   width: 100%;
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  grid-template-columns: 5;
-  grid-template-rows: 1;
-  grid-template-areas: "navAnimation navImg navBar navBar navBar";
 }
 
-.navAnimation {
-  grid-area: navAnimation;
+.topnav {
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  justify-content: space-evenly;
+  background-color: #fff;
+  color: rgb(255, 94, 0);
+  /*** LOGO ***/
 }
-.navAnimation img {
+.topnav .logo {
+  display: flex;
+  align-items: center;
+}
+.topnav .menu {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.topnav .menu li {
+  padding: 0 15px;
+}
+.topnav .menu a {
+  color: rgb(255, 94, 0);
+  text-decoration: none;
+  font-weight: bold;
+}
+.topnav .open-menu,
+.topnav .close-menu {
+  display: none;
+}
+
+img {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -57,67 +89,6 @@ body {
     -webkit-transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
     transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
     opacity: 1;
-  }
-}
-.navBar ul {
-  list-style-type: none;
-  display: flex;
-  gap: 60px;
-  justify-content: space-between;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 20px;
-}
-.navBar ul li a {
-  text-decoration: none;
-  color: rgb(255, 94, 0);
-  font-weight: bold;
-}
-
-span {
-  color: rgb(255, 111, 0);
-  font-size: 35px;
-}
-
-p {
-  font-size: 12px;
-}
-
-.span-1 {
-  color: rgb(23, 186, 97);
-  font-size: 18px;
-}
-
-.span-2 {
-  color: rgb(255, 94, 0);
-  font-size: 14px;
-}
-
-/** IMG - FONDO DE SECC **/
-.fondo_aboutUs img,
-.fondo_index img {
-  width: 100%;
-}
-
-/*** SECCION CARRUSEL ***/
-/*CARRUSEL*/
-.contenedor_carrusel {
-  width: 100%;
-  margin: auto;
-  overflow: hidden;
-}
-
-/*ANIMACION - OBRAS SOCIALES*/
-#slider {
-  width: 3000px;
-  height: 220px;
-  background-image: url("../assets/img/sliderObsSoc.png");
-  background-size: 100%;
-  animation: slider 40s infinite linear;
-}
-
-@keyframes slider {
-  to {
-    background-position: 2000px;
   }
 }
 /*** FOOTER ***/
@@ -223,12 +194,160 @@ p {
   gap: 10px;
 }
 
+/**** SECC INDEX ****/
+.main_index {
+  height: 100vh;
+  background-image: url("../assets/img/index.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main_index h1 {
+  padding-top: 500px;
+  font-size: 100px;
+}
+.main_index h2 {
+  font-size: 40px;
+}
+.main_index span {
+  color: rgb(255, 94, 0);
+  font-size: 35px;
+}
+.main_index p {
+  font-size: 12px;
+}
+
+/**** SECC SUC ****/
+.main_suc {
+  height: 88vh;
+  background-image: url("../assets/img/sucursales.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  padding: 3em 0 0 5em;
+  margin: 3em;
+  box-shadow: 1em 1em 15px rgba(255, 94, 0, 0.85);
+}
+
+.title {
+  color: #fff;
+}
+
+iframe {
+  padding-top: 2em;
+  margin-bottom: 1em;
+  width: 35em;
+  height: 21.5em;
+}
+
+/**** SECC SOBRE NOSOTROS ****/
+.main_us {
+  background-image: url("../assets/img/us.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 20px;
+  padding: 3em 0 0 5em;
+  margin: 3em;
+  box-shadow: 1em 1em 15px rgba(255, 94, 0, 0.85);
+}
+
+.historia {
+  padding-top: 12em;
+  color: #000;
+  font-size: 14px;
+  overflow-y: hidden;
+}
+
+.span-1,
+.span-2 {
+  font-weight: bold;
+  text-shadow: 1px 1px 1px grey;
+}
+
+.span-1 {
+  color: rgb(23, 186, 97);
+}
+
+.span-2 {
+  color: rgb(255, 94, 0);
+}
+
+.titulo_us {
+  color: rgb(255, 94, 0);
+  font-size: 50px;
+}
+
+/*CARRUSEL*/
+.contenedor_carrusel {
+  width: 105%;
+  margin-top: 13em;
+  display: flex;
+  flex-direction: row;
+  margin-left: -4.5em;
+}
+
+/*ANIMACION - OBRAS SOCIALES*/
+#slider {
+  width: 3000px;
+  height: 11vh;
+  background-image: url("../assets/img/sliderObsSoc.png");
+  animation: slider 10s infinite linear;
+}
+
+.carrusel {
+  padding-top: 8px;
+  font-size: 20px;
+}
+
+@keyframes slider {
+  to {
+    background-position: 2000px;
+  }
+}
+/**** SECC CONTACTO ****/
+.main-contact {
+  background-image: url("../assets/img/contacto.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.main-contact form {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.form-contact {
+  margin-top: 20em;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-form {
+  margin-top: 40px;
+  background-color: rgba(255, 94, 0, 0.3);
+  padding: 40px;
+  border-radius: 30px;
+}
+
+p {
+  font-size: medium;
+}
+
 /**** SECC PRESTACIONES ****/
 .grid-prest {
   height: 500px;
   display: flex;
   align-items: center;
-  background: rgba(0, 128, 0, 0.2);
+  background: rgb(23, 186, 97);
 }
 
 .prest2 {
@@ -250,94 +369,82 @@ p {
   margin: 10px;
 }
 
-/**** SECC SUCURSALES ****/
-.main-suc {
-  background-image: url("../assets/img/sucursales.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.videos-suc {
-  display: flex;
-  flex-direction: column;
-  margin-left: 200px;
-}
-
-.title {
-  color: #fff;
-}
-
-/**** SECC SOBRE NOSOTROS ****/
-.main-aboutUs {
-  padding-bottom: 100vh;
-  height: 70vh;
-  background-image: url("../assets/img/aboutUs.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.historia p {
-  color: #fff;
-  font-size: 16px;
-  overflow-y: hidden;
-}
-
-/**** SECC CONTACTO ****/
-.main-contact {
-  height: 110vh;
-  background-image: url("../assets/img/contacto.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-}
-.main-contact form {
-  width: 400px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-}
-
-.form-contact {
-  display: flex;
-  justify-content: center;
-}
-
-.contact-form {
-  margin-top: 40px;
-  background-color: rgba(255, 94, 0, 0.3);
-  padding: 40px;
-  border-radius: 30px;
-}
-
-p {
-  font-size: medium;
-}
-
 /*********** TABLET 600px ***********/
-@media (max-width: 600px) {
-  /** NAVBAR - TABLET 600px **/
-  .container-navBar {
-    height: 7vh;
-    display: flex;
+@media (max-width: 768px) {
+  .topnav {
     justify-content: space-evenly;
+    /*** LOGO ***/
+    /*** MENU ***/
   }
-  .navImg img {
-    display: none;
+  .topnav .menu {
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    align-items: center;
+    background-color: rgb(23, 186, 97);
+    height: 100%;
+    overflow-y: auto;
+    opacity: 0;
+    pointer-events: none;
   }
-  .navBar ul {
-    gap: 30px;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    font-weight: bold;
+  .topnav .menu li {
+    padding: 0;
+    padding-bottom: 100px;
   }
-  .navBar ul li {
-    font-size: 15px;
+  .topnav .menu a {
+    color: #fff;
+    font-size: 40px;
+  }
+  .topnav .menu a:hover {
+    color: rgb(255, 94, 0);
+    transform: scale();
+    font-size: 40px;
+  }
+  .topnav .open-menu,
+.topnav .close-menu {
+    display: block;
+    border: none;
+    background-color: none;
+    cursor: pointer;
+  }
+  .topnav .close-menu {
+    align-self: flex-end;
+    padding: 0px 10px;
+  }
+  .topnav .menu_opened {
+    opacity: 1;
+    pointer-events: all;
+  }
+  .topnav .open-menu img,
+.topnav .close-menu img {
+    background: none;
+  }
+  .main_index {
+    background-image: url("../assets/img/index-tbl.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .navBar ul li a {
-    color: rgb(23, 186, 97);
+  .main_index h1 {
+    padding-top: 400px;
+    font-size: 100px;
+  }
+  .main_index h2 {
+    font-size: 40px;
+  }
+  .main_index span {
+    color: rgb(255, 94, 0);
+    font-size: 35px;
+  }
+  .main_index p {
+    font-size: 12px;
   }
   /**** FOOTER - TABLET 600px ****/
   .contenedor-footer {
@@ -362,181 +469,6 @@ p {
     display: none;
   }
   .box-2 {
-    display: none;
-  }
-  /**** SECC PRESTACIONES - TABLET 600px ****/
-  .grid-prest {
-    height: 86vh;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    background-image: none;
-    background: linear-gradient(rgb(23, 186, 97), white, rgb(255, 111, 0));
-    overflow-y: scroll;
-  }
-  .prest1 {
-    display: flex;
-    justify-content: center;
-  }
-  .prest2 {
-    margin: 0;
-  }
-  .prest2 img {
-    display: none;
-  }
-  .prest3 {
-    width: 100%;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-  }
-  .prest3 img {
-    width: 75%;
-    display: flex;
-    margin-left: 32px;
-    border: 2px solid grey;
-  }
-  .prest4 {
-    display: none;
-  }
-  /**** SECC SUCURSALES - TABLET 600px ****/
-  .main-suc {
-    background-image: url("../assets/img/sucursales-tbl.jpg");
-    height: 115vh;
-  }
-  .form-suc {
-    color: rgb(255, 111, 0);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-  .form-suc h1 {
-    margin-top: 10px;
-  }
-  .CmbBoxSucursal {
-    margin-top: 10px;
-    font-size: 20px;
-  }
-  option {
-    font-size: 12px;
-  }
-  .videos-suc {
-    margin-top: 50px;
-    margin-left: 7%;
-  }
-  .title {
-    width: 93%;
-    color: rgb(23, 186, 97);
-    background-color: rgba(128, 128, 128, 0.6);
-    border-radius: 10px;
-  }
-  .title h1 {
-    display: flex;
-    justify-content: center;
-    font-size: 45px;
-  }
-  /**** SECC ABOUT US - TABLET 600px ****/
-  .main-aboutUs {
-    padding-bottom: 10px;
-    height: 100vh;
-    background-image: url("../assets/img/aboutUs-tbl.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-  .historia-tbl {
-    display: none;
-  }
-  .historia p {
-    color: black;
-    font-size: 14px;
-    margin-top: 22vh;
-  }
-  /**** SECC CONTACTO - TABLET 600px ****/
-  .main-contact {
-    background-image: none;
-    height: 90vh;
-  }
-  .main-contact form {
-    width: 80vw;
-    background: linear-gradient(ORANGE, white);
-    line-height: 30px;
-  }
-  .form-contact {
-    margin-top: 1vh;
-    background-image: none;
-  }
-  .contact-form {
-    margin-top: 40px;
-    background-color: rgba(255, 94, 0, 0.3);
-    padding: 100px;
-  }
-  input {
-    line-height: 1.5rem;
-  }
-  .select-contact,
-.contact-form,
-.reset,
-.contact-form p .submit {
-    font-size: 20px;
-  }
-  /*********** MOBILE 360px ***********/
-  /**** NAVBAR - MOBILE 360px ****/
-}
-@media (max-width: 600px) and (max-width: 360px) {
-  .navAnimation {
-    display: none;
-  }
-  .container-navBar {
-    height: 10vh;
-    flex-direction: column;
-    align-items: center;
-  }
-  .navBar ul {
-    font-family: Georgia, "Times New Roman", Times, serif;
-  }
-  .navBar ul li {
-    font-size: 10px;
-  }
-  .navBar ul li a {
-    color: rgb(255, 94, 0);
-  }
-  .navImg img {
-    width: 100%;
-    display: flex;
-  }
-  .container-prest {
-    display: block;
-  }
-  .prest1 {
-    margin-top: 4vh;
-  }
-  .redes {
-    gap: 60px;
-  }
-  /**** SECC PRESTACIONES - MOBILE 360px ****/
-  .grid-prest {
-    height: 87vh;
-    background: linear-gradient(rgb(255, 111, 0), rgb(23, 186, 97));
-    overflow-y: scroll;
-  }
-  .prest1 {
-    display: flex;
-    justify-content: center;
-  }
-  .prest2 img {
-    display: none;
-  }
-  .prest3 {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-  }
-  .prest3 .prest3 img {
-    width: 75%;
-    display: flex;
-    margin-left: 32px;
-    border: 2px solid grey;
-  }
-  .prest4 {
     display: none;
   }
 }

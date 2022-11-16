@@ -17,133 +17,184 @@
     <title>Nueva Medicina</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="assets/img/icono_logo.ico">
-
+    <script defer src="./js/app.js"></script>
 </head>
 
+<!--------------------------------------------------- NAV BAR -->
+
 <body>
-    <main class="container-secc-prest">
+    <header class="topheader">
+        <nav class="topnav">
+            <a href="index.html" class="logo">
+                <img src="assets/img/logo.png" alt="logo">
+            </a>
+            <button class="open-menu" aria-label="abrir menu">
+                <img src="assets/img/bars.svg" alt="abrir menu">
+            </button>
+            <ul class="menu">
+                <button class="close-menu" aria-label="cerrar menu">
+                    <img src="assets/img/close.svg" alt="cerrar menu">
+                </button>
+                <li><a href="pages/prestaciones.html">Prestaciones</a></li>
+                <li><a href="#suc">Sucursales</a></li>
+                <li><a href="#us">Nosotros</a></li>
+                <li><a href="#contact">Contacto</a></li>
+                <li><a href="pages/login.html">Ingresar</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <!-- ENCABEZADO -->
+    <!--------------------------------------------- BANNER INDEX -->
+    <section class="main_index" id="index">
+        <h1>TE CUIDAMOS</h1>
+        <h2>JUNTO A TUS <span>AFECTOS</span></h2>
+    </section>
+    </div>
 
-        <header>
-            <div class="container-navBar">
+    <!---------------------------------------- SECC SUCURSALES -->
 
-                <div class="navAnimation"><a href="index.html">
-                        <img src="assets/img/logo2.jpg" alt=""></a>
+    <section class="main_suc" id="suc">
+        <div class="title">
+            <h1>PRINCIPALES SUCURSALES</h1>
+        </div>
+        <div class="vid">
+            <iframe src="https://www.youtube.com/embed/FtD7hBacnTo" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        </div>
+        <div class="form-suc">
+            <h1>Busqueda de sucursales:</h1>
+            <form method="post"><select class="CmbBoxSucursal" required>
+                    <option value="seleccione">Seleccione una sucursal</option>
+                    <option value="cordoba">Córdoba</option>
+                    <option value="mendoza">Mendoza</option>
+                    <option value="bsAs">Buenos Aires</option>
+                    <option value="rioNegro">Rio Negro</option>
+                    <option value="jujuy">Jujuy</option>
+                    <option value="sanJuan">San Juan</option>
+                    <option value="tierraDelFuego">Tierra del Fuego</option>
+                    <option value="sanLuis">San Luis</option>
+                </select>
+            </form>
+    </section>
+
+
+    <!---------------------------------------- SECC ABOUT US -->
+
+    <section class="main_us" id="us">
+
+        <div class="contenedor_carrusel">
+
+            <!-- TEXTO ABOUT US -->
+            <div class="historia historia-tbl">
+                <p>El servicio integral de <span class="span-1">Nueva Medicina Internación Domiciliaria</span> , se
+                    encuentra capacitado
+                    para asistir
+                    al paciente de
+                    manera activa y personalizada en su propio hogar. Ocupándose de todas y cada una de sus
+                    necesidades.
+                    Cuidándolo con
+                    rigor científico, y acompañándolo con afecto y dedicación, respetando su persona y su dignidad
+                    humana. Privilegiando al
+                    paciente y a su entorno familiar en el entorno terapéutico idóneo para el <span class="span-2">SU
+                        HOGAR.</span>
+                    Nuestro personal cuenta, con un amplio conocimiento en el manejo de equipos de última
+                    generación
+                    aplicados al
+                    tratamiento de múltiples patologías, como así también a la rehabilitaciónde pacientes en
+                    recuperación.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    </div>
+
+    <!------------------------------------------ SECCC CONTACTO -->
+    <section class="main_contact" id="contact">
+
+        <!-------------------------- CARRUSEL -->
+        <div class="carrusel" id="slider">
+            <h2 class="carrusel">QUIENES CONFIAN EN <span>NOSOTROS</span></h2>
+        </div>
+
+        <!------------------------------------------ FORMULARIO CONTACTO -->
+        <div class="form-contact">
+            <form method="post" class="contact-form">
+                Nombre: <input type="text" name="nombre" required><br><br>
+                Apellido: <input type="text" name="apellido" required><br><br>
+                E-mail: <input type="email" name="e-mail" required><br><br>
+                <p>¿Desea recibir info sobre nosotros?</p> <input class="checkbox" type="checkbox" name="cb_neswletter"
+                    required><br><br>
+                <p>Estado civil:</p>
+                <select class="select-contact" name="estadocivil" required>
+                    <option value="casado">Casado</option>
+                    <option value="soltero">Soltero</option>
+                    <option value="divorciado">Divorciado</option>
+                </select><br><br>
+                Dejenos sus comentarios:<br><br>
+                <textarea class="textarea" name="comentarios" cols="30" rows="10" required></textarea><br><br>
+                <input class="reset" type="reset" name="btn_clearform" value="Limpiar formulario"><br><br>
+                <input class="submit" type="submit" name="btn_submit">
+            </form>
+        </div>
+    </section>
+
+    <!------------------------------------------------ FOOTER -->
+    <footer>
+        <div class="contenedor-footer">
+            <div class="logo-footer">
+                <div class="box-1">
+                    <img src="../assets/img/logofooter.jpg" alt="logofooter">
+                </div>
+            </div>
+
+            <div class="redes footer-tbl-suc footer-mbl-suc">
+                <div class="box-2">
+                    <p>Seguinos en las redes</p><br>
                 </div>
 
-                <div class="navImg">
-                    <a href="index.html"><img src="assets/img/logo1.png"></a>
+                <div class="box-3"><a href="https://www.facebook.com" class="icon fbIcon"><img
+                            src="assets/img/fbIcon.png " alt="facebook_iniciar_sesion"></a></div>
+                <div class="box-4"><a href="https://www.instagram.com" class="icon igIcon"><img
+                            src="assets/img/igIcon.png " alt="instagram_iniciar_sesion"></a></div>
+                <div class="box-5"><a href="https://www.twitter.com" class="icon twIcon"><img
+                            src="assets/img/twIcon.png " alt="tweeter_iniciar_sesion"></a></div>
+            </div>
+
+            <div class="dom">
+                <div class="box-6">
+                    <p>Oficinas comerciales</p>
                 </div>
-
-                <nav class="navBar">
-                    <ul>
-                        <li><a href="pages/prestaciones.html">Prestaciones</a></li>
-                        <li><a href="pages/sucursales.html">Sucursales</a></li>
-                        <li><a href="pages/aboutUs.html">Sobre Nosotros</a></li>
-                        <li><a href="pages/contacto.html">Contacto</a></li>
-                    </ul>
-                </nav>
-
-            </div>
-        </header>
-
-        <!-- CONTENIDO -->
-
-        <main class="container main_index">
-            <div class="fondo_index">
-                <img src="assets/img/servicios.png" alt="fondo_index">
-            </div>
-            <div class="titulo_obSoc">
-                <h1>QUIENES CONFIAN EN <span>NOSOTROS</span></h1>
-            </div>
-
-            <!-- CARRUSEL -->
-
-            <div class="contenedor_carrusel">
-                <div class="carrusel" id="slider">
+                <div class="box-7">
+                    <p class="p-footer1">Sede Central:</p>
+                    <p class="p-footer2">Jerónimo Luis de Cabrera 783 PB OF, 5000 Córdoba.</p>
+                    <p>TE: 351-6455445</p><br>
+                    <p class="p-footer3">Suc. Mendoza:</p>
+                    <p class="p-footer4">Pte. Roque Senz Peña 387 PB OF, 5501 Mendoza.</p>
+                    <p>TE: 261-6498988</p>
+                    </p>
                 </div>
             </div>
-            <div class="txt-index">
-                <p><span class="span-1">Lorem</span> ipsum dolor sit amet consectetur, adipisicing elit. Commodi
-                    suscipit aperiam ab eius animi
-                    recusandae
-                    totam ipsam placeat error ipsa corporis deserunt possimus, <span class="span-2">adipisci officia
-                        tenetur</span>adipisci officia tenetur hic consequatur
-                    quos
-                    distinctio consequuntur nesciunt illum enim eaque quia aut? Incidunt aliquam harum facilis tempore
-                    quas
-                    ut
-                    cupiditate nisi, sed ipsam ullam nostrum, aperiam suscipit quidem, velit iste inventore voluptatem!
-                    Nulla
-                    soluta ratione delectus enim <span class="span-2">velit laborum quas nihil</span> , omnis facere vel
-                    nostrum doloribus sunt
-                    similique
-                    a
-                    officia necessitatibus, voluptatum <span class="span-2">mollitia autem voluptatem.</span> Ad odit
-                    rem itaque velit debitis
-                    sapiente
-                    vitae quod incidunt nulla assumenda eius quidem ex, repellat maxime consectetur officiis voluptates
-                    alias
-                    explicabo aspernatur error maiores ipsum. Incidunt quos excepturi doloremque, illum recusandae
-                    numquam
-                    tota.</p>
-            </div>
-        </main>
 
-        <!-- FOOTER -->
-        <footer>
-            <div class="contenedor-footer">
-                <div class="logo-footer">
-                    <div class="box-1">
-                        <img src="../assets/img/logofooter.jpg" alt="logofooter">
-                    </div>
-                </div>
-
-                <div class="redes footer-tbl-suc footer-mbl-suc">
-                    <div class="box-2">
-                        <p>Seguinos en las redes</p><br>
-                    </div>
-
-                    <div class="box-3"><a href="https://www.facebook.com" class="icon fbIcon"><img
-                                src="../assets/img/fbIcon.png " alt="facebook_iniciar_sesion"></a></div>
-                    <div class="box-4"><a href="https://www.instagram.com" class="icon igIcon"><img
-                                src="../assets/img/igIcon.png " alt="instagram_iniciar_sesion"></a></div>
-                    <div class="box-5"><a href="https://www.twitter.com" class="icon twIcon"><img
-                                src="../assets/img/twIcon.png " alt="tweeter_iniciar_sesion"></a></div>
-                </div>
-
-                <div class="dom">
-                    <div class="box-6">
-                        <p>Oficinas comerciales</p>
-                    </div>
-                    <div class="box-7">
-                        <p class="p-footer1">Sede Central:</p>
-                        <p class="p-footer2">Jerónimo Luis de Cabrera 783 PB OF, 5000 Córdoba.</p>
-                        <p>TE: 351-6455445</p><br>
-                        <p class="p-footer3">Suc. Mendoza:</p>
-                        <p class="p-footer4">Pte. Roque Senz Peña 387 PB OF, 5501 Mendoza.</p>
-                        <p>TE: 261-6498988</p>
+            <div class="contact-footer">
+                <div class="box-6">
+                    <p>Contacto</p>
+                </div><br>
+                <div class="box-7">
+                    <p class="p-footer1">
+                        <b>E-mail: </b>mailerCba.nuevamdicina@gmail.com
+                    </p><br><br>
+                    <div class="box-8">
+                        <p class="p-footer3">
+                            <b>E-mail: </b>mailerMnz.nuevamdicina@gmail.com
                         </p>
                     </div>
                 </div>
-
-                <div class="contact-footer">
-                    <div class="box-6">
-                        <p>Contacto</p>
-                    </div><br>
-                    <div class="box-7">
-                        <p class="p-footer1">
-                            <b>E-mail: </b>mailerCba.nuevamdicina@gmail.com
-                        </p><br><br>
-                        <div class="box-8">
-                            <p class="p-footer3">
-                                <b>E-mail: </b>mailerMnz.nuevamdicina@gmail.com
-                            </p>
-                        </div>
-                    </div>
-                </div>
-        </footer>
+            </div>
+    </footer>
 </body>
 
 </html>
