@@ -3,5 +3,10 @@
     padding: 3em 0 0 5em;
     margin: 3em;
     box-shadow: 1em 1em 15px rgb(255, 94, 0, 85%);
+}
 
+@mixin grid-props ($col, $row) {
+    display: grid;
+    grid-template-columns: $col;
+    grid-template-rows: $row;
 }

@@ -48,43 +48,49 @@
     <section class="main_index" id="index">
         <h1>TE CUIDAMOS</h1>
         <h2>JUNTO A TUS <span>AFECTOS</span></h2>
+
     </section>
-    </div>
+
+
 
     <!---------------------------------------- SECC SUCURSALES -->
+    <div class="container">
+        <section class="main_suc" id="suc">
+            <div class="title">
+                <h1>PRINCIPALES SUCURSALES</h1>
+            </div>
+            <div class="vid">
+                <iframe src="https://www.youtube.com/embed/FtD7hBacnTo" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+                <div class="vid-description">
 
-    <section class="main_suc" id="suc">
-        <div class="title">
-            <h1>PRINCIPALES SUCURSALES</h1>
-        </div>
-        <div class="vid">
-            <iframe src="https://www.youtube.com/embed/FtD7hBacnTo" title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-            </iframe>
-        </div>
-        <div class="form-suc">
-            <h1>Busqueda de sucursales:</h1>
-            <form method="post"><select class="CmbBoxSucursal" required>
-                    <option value="seleccione">Seleccione una sucursal</option>
-                    <option value="cordoba">Córdoba</option>
-                    <option value="mendoza">Mendoza</option>
-                    <option value="bsAs">Buenos Aires</option>
-                    <option value="rioNegro">Rio Negro</option>
-                    <option value="jujuy">Jujuy</option>
-                    <option value="sanJuan">San Juan</option>
-                    <option value="tierraDelFuego">Tierra del Fuego</option>
-                    <option value="sanLuis">San Luis</option>
-                </select>
-            </form>
-    </section>
+                </div>
+            </div>
+            <div class="form-suc">
+                <h1>Busqueda de sucursales:</h1>
+                <form method="post"><select class="CmbBoxSucursal" required>
+                        <option value="seleccione">Seleccione una sucursal</option>
+                        <option value="cordoba">Córdoba</option>
+                        <option value="mendoza">Mendoza</option>
+                        <option value="bsAs">Buenos Aires</option>
+                        <option value="rioNegro">Rio Negro</option>
+                        <option value="jujuy">Jujuy</option>
+                        <option value="sanJuan">San Juan</option>
+                        <option value="tierraDelFuego">Tierra del Fuego</option>
+                        <option value="sanLuis">San Luis</option>
+                    </select>
+                </form>
+        </section>
 
 
-    <!---------------------------------------- SECC ABOUT US -->
+        <!---------------------------------------- SECC ABOUT US -->
 
-    <section class="main_us" id="us">
+        <section class="main_us" id="us">
+            <div>
 
-        <div class="contenedor_carrusel">
+            </div>
 
             <!-- TEXTO ABOUT US -->
             <div class="historia historia-tbl">
@@ -106,95 +112,64 @@
                     recuperación.
                 </p>
             </div>
-        </div>
-    </section>
 
+        </section>
 
+        <!------------------------------------------ SECCC CONTACTO -->
+        <section class="main_contact" id="contact">
+
+            <!-------------------------- CARRUSEL -->
+            <div class="h2-carrusel">
+                <h2><i>QUIENES CONFIAN EN <span>NOSOTROS</span></i></h2>
+            </div>
+            <div class="carrusel" id="slider">
+            </div>
+
+            <!------------------------------------------ FORMULARIO CONTACTO -->
+            <div class="form-contact">
+                <form method="post" class="form-left box-c1">
+                    <p>Nombre:</p> <input type="text" name="nombre" required><br><br>
+                    <p>Apellido:</p><input type="text" name="apellido" required><br><br>
+                    <p>E-mail:</p><input type="email" name="e-mail" required><br><br>
+                    <p>¿Desea recibir info sobre nosotros?</p> <input class="checkbox" type="checkbox"
+                        name="cb_neswletter" required><br><br>
+                </form>
+                <form action="post" class="form-right box-c2">
+                    <p>Estado civil:</p>
+                    <select class="select-contact" name="estadocivil" required>
+                        <option value="casado">Casado</option>
+                        <option value="soltero">Soltero</option>
+                        <option value="divorciado">Divorciado</option>
+                    </select><br><br>
+                    <p>Dejenos sus comentarios:</p>
+                    <textarea class="textarea" name="comentarios" cols="30" rows="10" required></textarea>
+                </form>
+                <div class="inputs-contact box-c3">
+                    <input class="reset" type="reset" name="btn_clearform" value="Limpiar formulario"><br><br>
+                    <input class="submit" type="submit" name="btn_submit">
+                </div>
+            </div>
+        </section>
+
+        <!------------------------------------------------ FOOTER -->
+        <footer class="contenedor-footer">
+            <div class="redes">
+                <a href="https://www.facebook.com" class="fbIcon" target="_blank">
+                    <img src="assets/img/facebook.jpg " alt="facebook_iniciar_sesion"></a>
+
+                <a href="https://www.instagram.com" class="igIcon" target="_blank">
+                    <img src="assets/img/instagram.jpg " alt="instagram_iniciar_sesion"></a>
+
+                <a href="https://www.twitter.com" class="twIcon" target="_blank">
+                    <img src="assets/img/twitter.jpg" alt="tweeter_iniciar_sesion"></a>
+            </div>
+
+            <div class="copyright">
+                <p>©Copyright - Nueva Medicina</p>
+            </div>
+
+        </footer>
     </div>
-
-    <!------------------------------------------ SECCC CONTACTO -->
-    <section class="main_contact" id="contact">
-
-        <!-------------------------- CARRUSEL -->
-        <div class="carrusel" id="slider">
-            <h2 class="carrusel">QUIENES CONFIAN EN <span>NOSOTROS</span></h2>
-        </div>
-
-        <!------------------------------------------ FORMULARIO CONTACTO -->
-        <div class="form-contact">
-            <form method="post" class="contact-form">
-                Nombre: <input type="text" name="nombre" required><br><br>
-                Apellido: <input type="text" name="apellido" required><br><br>
-                E-mail: <input type="email" name="e-mail" required><br><br>
-                <p>¿Desea recibir info sobre nosotros?</p> <input class="checkbox" type="checkbox" name="cb_neswletter"
-                    required><br><br>
-                <p>Estado civil:</p>
-                <select class="select-contact" name="estadocivil" required>
-                    <option value="casado">Casado</option>
-                    <option value="soltero">Soltero</option>
-                    <option value="divorciado">Divorciado</option>
-                </select><br><br>
-                Dejenos sus comentarios:<br><br>
-                <textarea class="textarea" name="comentarios" cols="30" rows="10" required></textarea><br><br>
-                <input class="reset" type="reset" name="btn_clearform" value="Limpiar formulario"><br><br>
-                <input class="submit" type="submit" name="btn_submit">
-            </form>
-        </div>
-    </section>
-
-    <!------------------------------------------------ FOOTER -->
-    <footer>
-        <div class="contenedor-footer">
-            <div class="logo-footer">
-                <div class="box-1">
-                    <img src="../assets/img/logofooter.jpg" alt="logofooter">
-                </div>
-            </div>
-
-            <div class="redes footer-tbl-suc footer-mbl-suc">
-                <div class="box-2">
-                    <p>Seguinos en las redes</p><br>
-                </div>
-
-                <div class="box-3"><a href="https://www.facebook.com" class="icon fbIcon"><img
-                            src="assets/img/fbIcon.png " alt="facebook_iniciar_sesion"></a></div>
-                <div class="box-4"><a href="https://www.instagram.com" class="icon igIcon"><img
-                            src="assets/img/igIcon.png " alt="instagram_iniciar_sesion"></a></div>
-                <div class="box-5"><a href="https://www.twitter.com" class="icon twIcon"><img
-                            src="assets/img/twIcon.png " alt="tweeter_iniciar_sesion"></a></div>
-            </div>
-
-            <div class="dom">
-                <div class="box-6">
-                    <p>Oficinas comerciales</p>
-                </div>
-                <div class="box-7">
-                    <p class="p-footer1">Sede Central:</p>
-                    <p class="p-footer2">Jerónimo Luis de Cabrera 783 PB OF, 5000 Córdoba.</p>
-                    <p>TE: 351-6455445</p><br>
-                    <p class="p-footer3">Suc. Mendoza:</p>
-                    <p class="p-footer4">Pte. Roque Senz Peña 387 PB OF, 5501 Mendoza.</p>
-                    <p>TE: 261-6498988</p>
-                    </p>
-                </div>
-            </div>
-
-            <div class="contact-footer">
-                <div class="box-6">
-                    <p>Contacto</p>
-                </div><br>
-                <div class="box-7">
-                    <p class="p-footer1">
-                        <b>E-mail: </b>mailerCba.nuevamdicina@gmail.com
-                    </p><br><br>
-                    <div class="box-8">
-                        <p class="p-footer3">
-                            <b>E-mail: </b>mailerMnz.nuevamdicina@gmail.com
-                        </p>
-                    </div>
-                </div>
-            </div>
-    </footer>
 </body>
 
 </html>
