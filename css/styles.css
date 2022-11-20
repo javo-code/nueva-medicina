@@ -389,7 +389,7 @@ a {
 
 .main_nutri {
   background: url("../assets/img/nutri2.jpg");
-  background-size: cover;
+  background-size: contain;
 }
 
 .container-kine {
@@ -621,71 +621,52 @@ a {
   }
   /**** SECC CONTACTO ****/
   .main_contact {
-    height: 83vh;
+    height: 120vh;
+  }
+  .main_contact .box-c1 .box-c1,
+.main_contact .box-c1 .box-c2 p,
+.main_contact .box-c2 .box-c1,
+.main_contact .box-c2 .box-c2 p {
+    line-height: 16px;
   }
   .main_contact .form-contact {
-    height: 50vh;
-    line-height: 8px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: url("../assets/img/contacto-tbl.jpg");
-    border: 1px solid rgb(211, 211, 211);
+    height: 75vh;
+    line-height: 5px;
+    padding: 50px;
     border-radius: 20px;
     border-radius: 20px;
     margin: 3em;
     box-shadow: 1em 1em 15px rgba(255, 94, 0, 0.85);
     padding-top: 0%;
-    margin-top: 10%;
     font-size: 20px;
   }
   /**** SECC SERVICIOS ****/
   .main_prest {
-    height: 145vh;
+    height: 120vh;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    background: linear-gradient(rgb(255, 183, 0), #fff);
+    background: linear-gradient(rgb(255, 183, 0), #fff, rgb(23, 186, 97));
   }
   .main_prest .prest-txt {
-    padding-top: 10px;
+    padding-top: 0;
     font-size: 40px;
     color: #fff;
-    text-shadow: 5px 5px black;
+    text-shadow: 2px 2px black;
     margin-bottom: 0;
   }
   .main_prest .prest1 {
+    width: 250px;
     display: flex;
     margin-top: 0;
-    margin-bottom: 30px;
+    margin-bottom: 0;
+    overflow-x: scroll;
   }
   .main_prest .prest1 img {
-    margin: 10px;
+    margin-left: 30px;
     border-radius: 10%;
     box-shadow: 10px 10px 1em purple;
   }
-  .main_prest .prest2 {
-    margin-bottom: 20vh;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    margin-bottom: 0;
-  }
-  .main_prest .prest2 img {
-    width: 89%;
-    box-shadow: 6px 6px 0.5em rgb(0, 81, 0);
-    width: 75%;
-    margin-left: 10%;
-  }
   .main_prest .prest3 {
-    margin-top: 0;
-    width: 90%;
-    margin-bottom: -15%;
-  }
-  .main_prest .prest3 p {
-    padding-inline-start: 10px;
-    font-size: 30px;
+    display: none;
   }
 }
 
