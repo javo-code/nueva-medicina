@@ -11,11 +11,12 @@ html {
 }
 
 section[id] {
-  scroll-margin-top: 90px;
+  scroll-margin-top: 50px;
 }
 
 body {
   font-family: "calibri";
+  background-image: url("/assets/img/prestaciones.jpg");
 }
 
 a {
@@ -35,7 +36,7 @@ a {
 
 .topnav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin: 0 auto;
 }
 
@@ -79,12 +80,14 @@ a {
 .contenedor-footer {
   display: block;
   align-items: center;
+  background: #fff;
+  border-top: 2px solid rgb(186, 186, 186);
 }
 .contenedor-footer .redes {
   padding-top: 2%;
   display: flex;
   justify-content: center;
-  padding: 0;
+  padding: 10px;
   gap: 10%;
 }
 .contenedor-footer .copyright {
@@ -122,7 +125,7 @@ a {
 
 /**** SECC SUC ****/
 .main_suc {
-  height: 86vh;
+  height: 85vh;
   background-image: url("../assets/img/sucursales.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -132,9 +135,10 @@ a {
   justify-content: space-evenly;
   padding-left: 5%;
   border: 1px solid rgb(211, 211, 211);
+  border: 2px solid rgb(23, 186, 97);
   border-radius: 20px;
   margin: 3em;
-  box-shadow: 1em 1em 15px rgba(255, 94, 0, 0.85);
+  box-shadow: 1em 1em 15px rgb(23, 186, 97);
 }
 .main_suc .title {
   color: #fff;
@@ -145,7 +149,7 @@ a {
 .main_suc .vid {
   width: 50%;
   height: 59%;
-  box-shadow: 1em 1em 15px rgba(255, 94, 0, 0.85);
+  box-shadow: 1em 1em 15px black;
   border-radius: 20px;
   border: 1px solid black;
   object-fit: cover;
@@ -160,64 +164,61 @@ a {
 
 /**** SECC SOBRE NOSOTROS ****/
 .main_us {
-  height: 55vh;
+  height: 100vh;
   display: flex;
-  background-image: url("../assets/img/us.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  padding-top: 20%;
+  border-radius: 20px;
+  padding-bottom: 50vh;
+}
+.main_us .container-us {
+  width: 100%;
+  height: 90vh;
+  margin-top: 10vh;
+  border: 1px solid rgb(211, 211, 211);
+  box-shadow: 5px 5px 15px green;
+  display: flex;
+  justify-content: space-around;
+  border: 2px solid rgb(23, 186, 97);
   border-radius: 20px;
   margin: 3em;
-  box-shadow: 1em 1em 15px rgba(255, 94, 0, 0.85);
+  box-shadow: 1em 1em 15px rgb(23, 186, 97);
 }
-.main_us .historia-mbl {
-  display: none;
+.main_us .container-us .historia {
+  padding: 20px;
+  text-align: justify;
+  font-size: 18px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+}
+.main_us .container-us .historia img {
+  float: right;
+  width: 70%;
+  padding: 0 20px;
+  border-radius: 50px;
+  margin: 10px;
+}
+.main_us .container-us .historia h2 {
+  font-size: 40px;
+}
+.main_us .container-us .historia h2 span {
+  color: rgb(23, 186, 97);
+  text-decoration: underline;
+}
+.main_us .container-us .historia h3 span {
+  font-size: 25px;
+  color: rgb(23, 186, 97);
+}
+.main_us .container-us .historia p {
+  font-size: 18px;
+}
+.main_us .container-us .historia p span {
+  color: rgb(255, 94, 0);
+  font-weight: bold;
+  font-size: 25px;
 }
 
 /*CARRUSEL*/
-.contenedor_carrusel {
-  width: 105%;
-  display: flex;
-  flex-direction: row;
-  margin-left: -4.5em;
-}
-
-@-webkit-keyframes tilt-in-fwd-tl {
-  0% {
-    -webkit-transform: rotateY(-20deg) rotateX(35deg) translate(-300px, -300px) skew(35deg, -10deg);
-    transform: rotateY(-20deg) rotateX(35deg) translate(-300px, -300px) skew(35deg, -10deg);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
-    transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
-    opacity: 1;
-  }
-}
-@keyframes tilt-in-fwd-tl {
-  0% {
-    -webkit-transform: rotateY(-20deg) rotateX(35deg) translate(-300px, -300px) skew(35deg, -10deg);
-    transform: rotateY(-20deg) rotateX(35deg) translate(-300px, -300px) skew(35deg, -10deg);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
-    transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
-    opacity: 1;
-  }
-}
-.h2-carrusel {
-  margin: 4.5%;
-  font-size: 30px;
-  text-decoration: underline;
-}
-.h2-carrusel span {
-  color: rgb(23, 186, 97);
-}
-
 .carrusel {
-  height: 93px;
+  height: 90px;
 }
 
 #slider {
@@ -233,7 +234,8 @@ a {
 }
 /**** SECC CONTACTO ****/
 .main_contact {
-  height: 80vh;
+  height: 77vh;
+  padding: 1em;
 }
 
 .form-contact {
@@ -242,7 +244,7 @@ a {
   line-height: 8px;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(4, 1fr);
@@ -251,9 +253,10 @@ a {
   background-position: center;
   border: 1px solid rgb(211, 211, 211);
   border-radius: 20px;
+  border: 2px solid rgb(23, 186, 97);
   border-radius: 20px;
   margin: 3em;
-  box-shadow: 1em 1em 15px rgba(255, 94, 0, 0.85);
+  box-shadow: 1em 1em 15px rgb(23, 186, 97);
   padding-top: 2%;
 }
 
@@ -295,8 +298,7 @@ a {
 /**** SECC PRESTACIONES ****/
 .main_prest {
   width: 100%;
-  height: 160vh;
-  margin-top: 10px;
+  height: 180vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -346,7 +348,6 @@ a {
 .main_nutri {
   display: flex;
   justify-content: center;
-  margin-bottom: 30px;
 }
 .main_enf .container-enf,
 .main_enf .container-nutri,
@@ -384,7 +385,7 @@ a {
 }
 
 .main_enf {
-  background: url("../assets/img/prestaciones.jpg");
+  background: url("../assets/img/enf.jpg");
   background-repeat: repeat;
   background-size: contain;
 }
@@ -408,8 +409,7 @@ a {
   display: flex;
   justify-content: space-around;
 }
-.container-kine .kinesioterapia,
-.container-kine .fisioterapia {
+.container-kine .kinesioterapia {
   padding: 20px;
   text-align: justify;
   font-size: 18px;
@@ -417,8 +417,7 @@ a {
   margin-bottom: 30px;
   background-color: rgba(255, 255, 255, 0.8);
 }
-.container-kine .kinesioterapia img,
-.container-kine .fisioterapia img {
+.container-kine .kinesioterapia img {
   float: right;
   width: 75%;
   padding: 20px;
@@ -428,6 +427,11 @@ a {
 @media (max-width: 800px) {
   section[id] {
     scroll-margin-top: 90px;
+  }
+  .topnav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
   }
   .logo {
     padding-left: 20px;
@@ -472,14 +476,15 @@ a {
   .main_suc .form-suc {
     color: #fff;
   }
-  .main_us {
-    height: 61vh;
-    background-image: url("../assets/img/us-tbl.png");
-    background-size: none;
-  }
-  .main_us .historia-tbl-mbl {
-    display: none;
-  }
+  /*     .main_us {
+      height: 61vh;
+      background-image: url("../assets/img/us-tbl.png");
+      background-size: none;
+
+      .historia-tbl-mbl {
+          display: none;
+      }
+  } */
   /**** SECC CONTACTO ****/
   .main_contact {
     height: 83vh;
@@ -494,9 +499,10 @@ a {
     background-image: url("../assets/img/contacto-tbl.jpg");
     border: 1px solid rgb(211, 211, 211);
     border-radius: 20px;
+    border: 2px solid rgb(23, 186, 97);
     border-radius: 20px;
     margin: 3em;
-    box-shadow: 1em 1em 15px rgba(255, 94, 0, 0.85);
+    box-shadow: 1em 1em 15px rgb(23, 186, 97);
     padding-top: 0%;
     margin-top: 10%;
     font-size: 20px;
@@ -584,9 +590,10 @@ a {
     background-size: cover;
     background-position: center;
     border: 1px solid rgb(211, 211, 211);
+    border: 2px solid rgb(23, 186, 97);
     border-radius: 20px;
     margin: 3em;
-    box-shadow: 1em 1em 15px rgba(255, 94, 0, 0.85);
+    box-shadow: 1em 1em 15px rgb(23, 186, 97);
     padding-left: 5%;
   }
   .main_suc .title {
@@ -604,32 +611,38 @@ a {
     color: #fff;
   }
   /**** SECC SUCURSALES ****/
-  .main_us {
-    height: 70vh;
-    background-image: none;
-    box-shadow: none;
-    padding-top: 0;
-  }
-  .main_us .carrusel-fijo {
-    display: flex;
-  }
-  .main_us .historia-mbl {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-  }
-  .main_us .historia-mbl .txt-historia {
-    font-size: 20px;
-    margin-top: 70px;
-  }
-  .main_us .historia-mbl h2 {
-    text-decoration: underline;
-    font-size: 30px;
-  }
-  .main_us .historia-mbl h2 span {
-    color: rgb(23, 186, 97);
-    text-decoration: underline;
-  }
+  /*     .main_us {
+      height: 70vh;
+      background-image: none;
+      box-shadow: none;
+      padding-top: 0;
+
+      .carrusel-fijo {
+          display: flex;
+      }
+
+      .historia-mbl {
+          display: flex;
+          flex-direction: column;
+          padding: 0;
+
+          .txt-historia {
+              font-size: 20px;
+              margin-top: 70px;
+          }
+
+          h2 {
+              text-decoration: underline;
+              font-size: 30px;
+
+              span {
+                  color: $color-principal;
+                  text-decoration: underline;
+              }
+
+          }
+      }
+  } */
   /**** SECC CONTACTO ****/
   .main_contact {
     height: 120vh;
@@ -645,9 +658,10 @@ a {
     line-height: 5px;
     padding: 50px;
     border-radius: 20px;
+    border: 2px solid rgb(23, 186, 97);
     border-radius: 20px;
     margin: 3em;
-    box-shadow: 1em 1em 15px rgba(255, 94, 0, 0.85);
+    box-shadow: 1em 1em 15px rgb(23, 186, 97);
     padding-top: 0%;
     font-size: 20px;
   }

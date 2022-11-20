@@ -1,7 +1,8 @@
 @mixin box-shadow () {
+    border: 2px solid $color-principal;
     border-radius: 20px;
     margin: 3em;
-    box-shadow: 1em 1em 15px rgb(255, 94, 0, 85%);
+    box-shadow: 1em 1em 15px $color-principal;
 }
 
 @mixin grid-props ($col, $row) {

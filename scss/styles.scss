@@ -13,11 +13,12 @@ html {
 }
 
 section[id] {
-    scroll-margin-top: 90px;
+    scroll-margin-top: 50px;
 }
 
 body {
     font-family: "calibri";
+    background-image: url("/assets/img/prestaciones.jpg");
 }
 
 a {
@@ -37,7 +38,7 @@ a {
 
 .topnav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin: 0 auto;
 
 
@@ -95,12 +96,15 @@ a {
 .contenedor-footer {
     display: block;
     align-items: center;
+    background: #fff;
+
+    border-top: 2px solid rgb(186, 186, 186);
 
     .redes {
         padding-top: 2%;
         display: flex;
         justify-content: center;
-        padding: 0;
+        padding: 10px;
         gap: 10%;
     }
 
@@ -147,7 +151,7 @@ a {
 /**** SECC SUC ****/
 
 .main_suc {
-    height: 86vh;
+    height: 85vh;
     background-image: url("../assets/img/sucursales.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -171,7 +175,7 @@ a {
     .vid {
         width: 50%;
         height: 59%;
-        box-shadow: 1em 1em 15px rgb(255, 94, 0, 85%);
+        box-shadow: 1em 1em 15px black;
         border-radius: 20px;
         border: 1px solid black;
         object-fit: cover;
@@ -190,75 +194,71 @@ a {
 }
 
 /**** SECC SOBRE NOSOTROS ****/
-
 .main_us {
-    height: 55vh;
+    height: 100vh;
     display: flex;
-    background-image: url("../assets/img/us.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding-top: 20%;
-    @include box-shadow;
+    border-radius: 20px;
+    padding-bottom: 50vh;
 
-    .historia-mbl {
-        display: none;
+
+    .container-us {
+        width: 100%;
+        height: 90vh;
+        margin-top: 10vh;
+        border: 1px solid rgb(211, 211, 211);
+        box-shadow: 5px 5px 15px green;
+        display: flex;
+        justify-content: space-around;
+        @include box-shadow;
+
+        .historia {
+            padding: 20px;
+            text-align: justify;
+            font-size: 18px;
+            background-color: rgb(255, 255, 255, 80%);
+            border-radius: 20px;
+
+            img {
+                float: right;
+                width: 70%;
+                padding: 0 20px;
+                border-radius: 50px;
+                margin: 10px;
+            }
+
+            h2 {
+                font-size: 40px;
+
+                span {
+                    color: $color-principal;
+                    text-decoration: underline;
+                }
+            }
+
+            h3 {
+                span {
+                    font-size: 25px;
+                    color: $color-principal;
+                }
+            }
+
+            p {
+                font-size: 18px;
+
+                span {
+                    color: $color-secundario;
+                    font-weight: bold;
+                    font-size: 25px;
+                }
+            }
+        }
     }
 }
-
-
-
 
 /*CARRUSEL*/
 
-.contenedor_carrusel {
-    width: 105%;
-    display: flex;
-    flex-direction: row;
-    margin-left: -4.5em;
-}
-
-@-webkit-keyframes tilt-in-fwd-tl {
-    0% {
-        -webkit-transform: rotateY(-20deg) rotateX(35deg) translate(-300px, -300px) skew(35deg, -10deg);
-        transform: rotateY(-20deg) rotateX(35deg) translate(-300px, -300px) skew(35deg, -10deg);
-        opacity: 0;
-    }
-
-    100% {
-        -webkit-transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
-        transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
-        opacity: 1;
-    }
-}
-
-@keyframes tilt-in-fwd-tl {
-    0% {
-        -webkit-transform: rotateY(-20deg) rotateX(35deg) translate(-300px, -300px) skew(35deg, -10deg);
-        transform: rotateY(-20deg) rotateX(35deg) translate(-300px, -300px) skew(35deg, -10deg);
-        opacity: 0;
-    }
-
-    100% {
-        -webkit-transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
-        transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
-        opacity: 1;
-    }
-}
-
-
-.h2-carrusel {
-    margin: 4.5%;
-    font-size: 30px;
-    text-decoration: underline;
-
-    span {
-        color: $color-principal;
-    }
-}
-
 .carrusel {
-    height: 93px
+    height: 90px
 }
 
 #slider {
@@ -266,8 +266,6 @@ a {
     background-image: url("../assets/img/sliderObsSoc.png");
     animation: slider 20s infinite linear;
 }
-
-
 
 @keyframes slider {
     to {
@@ -277,7 +275,8 @@ a {
 
 /**** SECC CONTACTO ****/
 .main_contact {
-    height: 80vh;
+    height: 77vh;
+    padding: 1em;
 }
 
 .form-contact {
@@ -286,7 +285,7 @@ a {
     line-height: 8px;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
@@ -345,8 +344,7 @@ a {
 
 .main_prest {
     width: 100%;
-    height: 160vh;
-    margin-top: 10px;
+    height: 180vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -406,7 +404,6 @@ a {
 .main_nutri {
     display: flex;
     justify-content: center;
-    margin-bottom: 30px;
 
     .container-enf,
     .container-nutri {
@@ -433,7 +430,7 @@ a {
 }
 
 .main_enf {
-    background: url("../assets/img/prestaciones.jpg");
+    background: url("../assets/img/enf.jpg");
     background-repeat: repeat;
     background-size: contain;
 }
@@ -458,8 +455,7 @@ a {
     display: flex;
     justify-content: space-around;
 
-    .kinesioterapia,
-    .fisioterapia {
+    .kinesioterapia {
         padding: 20px;
         text-align: justify;
         font-size: 18px;
@@ -481,6 +477,14 @@ a {
 @media (max-width: 800px) {
     section[id] {
         scroll-margin-top: 90px;
+    }
+
+    .topnav {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+
+
     }
 
     .logo {
@@ -539,7 +543,7 @@ a {
         }
     }
 
-    .main_us {
+    /*     .main_us {
         height: 61vh;
         background-image: url("../assets/img/us-tbl.png");
         background-size: none;
@@ -547,7 +551,7 @@ a {
         .historia-tbl-mbl {
             display: none;
         }
-    }
+    } */
 
     /**** SECC CONTACTO ****/
     .main_contact {
@@ -693,7 +697,10 @@ a {
     }
 
     /**** SECC SUCURSALES ****/
-    .main_us {
+
+
+
+    /*     .main_us {
         height: 70vh;
         background-image: none;
         box-shadow: none;
@@ -724,7 +731,7 @@ a {
 
             }
         }
-    }
+    } */
 
     /**** SECC CONTACTO ****/
 
