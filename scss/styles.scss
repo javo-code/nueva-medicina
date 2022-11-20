@@ -38,13 +38,24 @@ a {
 .topnav {
     display: flex;
     justify-content: space-between;
-
     margin: 0 auto;
+
+
 }
 
 .logo {
     display: flex;
     align-items: center;
+
+    img {
+        height: 50px;
+    }
+
+
+}
+
+.logo-mbl img {
+    display: none;
 }
 
 /**MENU**/
@@ -190,7 +201,7 @@ a {
     padding-top: 20%;
     @include box-shadow;
 
-    .historia-tbl-mbl {
+    .historia-mbl {
         display: none;
     }
 }
@@ -623,8 +634,13 @@ a {
         scroll-margin-top: 65px;
     }
 
-    .logo {
-        padding-left: 0;
+    .logo img {
+        display: none;
+    }
+
+    .logo-mbl img {
+        display: flex;
+        height: 50px;
     }
 
     .main_index {
@@ -687,10 +703,10 @@ a {
             display: flex;
         }
 
-        .historia-tbl-mbl {
+        .historia-mbl {
             display: flex;
             flex-direction: column;
-            padding: 20px;
+            padding: 0;
 
             .txt-historia {
                 font-size: 20px;
