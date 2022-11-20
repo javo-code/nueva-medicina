@@ -476,27 +476,25 @@ a {
   .main_suc .form-suc {
     color: #fff;
   }
-  /*     .main_us {
-      height: 61vh;
-      background-image: url("../assets/img/us-tbl.png");
-      background-size: none;
-
-      .historia-tbl-mbl {
-          display: none;
-      }
-  } */
+  .main_us .container-us {
+    width: 100%;
+    height: 65vh;
+    margin-top: 10vh;
+    overflow-y: auto;
+  }
   /**** SECC CONTACTO ****/
   .main_contact {
-    height: 83vh;
+    height: 77vh;
   }
   .main_contact .form-contact {
-    height: 50vh;
+    height: 40vh;
     line-height: 8px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-image: url("../assets/img/contacto-tbl.jpg");
+    background-size: cover;
     border: 1px solid rgb(211, 211, 211);
     border-radius: 20px;
     border: 2px solid rgb(23, 186, 97);
@@ -610,42 +608,32 @@ a {
   .main_suc .form-suc {
     color: #fff;
   }
-  /**** SECC SUCURSALES ****/
-  /*     .main_us {
-      height: 70vh;
-      background-image: none;
-      box-shadow: none;
-      padding-top: 0;
-
-      .carrusel-fijo {
-          display: flex;
-      }
-
-      .historia-mbl {
-          display: flex;
-          flex-direction: column;
-          padding: 0;
-
-          .txt-historia {
-              font-size: 20px;
-              margin-top: 70px;
-          }
-
-          h2 {
-              text-decoration: underline;
-              font-size: 30px;
-
-              span {
-                  color: $color-principal;
-                  text-decoration: underline;
-              }
-
-          }
-      }
-  } */
+  /**** SECC US ****/
+  .main_us {
+    padding-bottom: 0;
+  }
+  .main_us .container-us {
+    width: 120vw;
+    height: 90vh;
+    margin-top: 0vh;
+    overflow-y: auto;
+  }
+  .main_us .container-us .historia {
+    padding: 15px;
+    height: 60em;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  .main_us .container-us .historia img {
+    float: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
   /**** SECC CONTACTO ****/
   .main_contact {
-    height: 120vh;
+    height: 75vh;
+    padding: 0;
+    margin: 0;
   }
   .main_contact .box-c1 .box-c1,
 .main_contact .box-c1 .box-c2 p,
@@ -654,15 +642,17 @@ a {
     line-height: 16px;
   }
   .main_contact .form-contact {
-    height: 75vh;
+    height: 70vh;
     line-height: 5px;
+    background-size: 13.5em 30em;
     padding: 50px;
     border-radius: 20px;
     border: 2px solid rgb(23, 186, 97);
     border-radius: 20px;
     margin: 3em;
     box-shadow: 1em 1em 15px rgb(23, 186, 97);
-    padding-top: 0%;
+    padding-top: 10%;
+    margin-top: 0;
     font-size: 20px;
   }
   /**** SECC SERVICIOS ****/
