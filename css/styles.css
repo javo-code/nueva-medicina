@@ -76,7 +76,6 @@ a {
   padding-left: 25px;
 }
 
-/*** FOOTER ***/
 .contenedor-footer {
   display: block;
   align-items: center;
@@ -95,7 +94,6 @@ a {
   justify-content: center;
 }
 
-/**** SECC INDEX ****/
 .main_index {
   height: 100vh;
   background-image: url("../assets/img/index.jpg");
@@ -123,7 +121,6 @@ a {
   font-size: 12px;
 }
 
-/**** SECC SUC ****/
 .main_suc {
   height: 85vh;
   background-image: url("../assets/img/sucursales.jpg");
@@ -159,10 +156,9 @@ a {
   border-radius: 20px;
 }
 .main_suc .form-suc {
-  font-size: 18px;
+  line-height: 10px;
 }
 
-/**** SECC SOBRE NOSOTROS ****/
 .main_us {
   height: 100vh;
   display: flex;
@@ -171,7 +167,7 @@ a {
 }
 .main_us .container-us {
   width: 100%;
-  height: 90vh;
+  height: 80vh;
   margin-top: 10vh;
   border: 1px solid rgb(211, 211, 211);
   box-shadow: 5px 5px 15px green;
@@ -216,8 +212,8 @@ a {
   font-size: 25px;
 }
 
-/*CARRUSEL*/
 .carrusel {
+  margin-top: 50px;
   height: 90px;
 }
 
@@ -232,7 +228,6 @@ a {
     background-position: 2000px;
   }
 }
-/**** SECC CONTACTO ****/
 .main_contact {
   height: 77vh;
   padding: 1em;
@@ -295,7 +290,6 @@ a {
   width: fit-content;
 }
 
-/**** SECC PRESTACIONES ****/
 .main_prest {
   width: 100%;
   height: 180vh;
@@ -423,7 +417,6 @@ a {
   padding: 20px;
 }
 
-/******************************************************** TABLET 800px */
 @media (max-width: 800px) {
   section[id] {
     scroll-margin-top: 90px;
@@ -509,12 +502,10 @@ a {
   }
   /**** SECC PRESTACIONES ****/
   .main_prest {
-    height: 145vh;
+    height: 100vh;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    background: linear-gradient(rgb(255, 183, 0), #fff);
+    background-image: url("/assets/img/prestaciones.jpg");
+    background: linear-gradient(rgba(255, 183, 0, 0.4), rgba(30, 182, 0, 0.4));
   }
   .main_prest .prest-txt {
     padding-top: 10px;
@@ -555,7 +546,6 @@ a {
     font-size: 30px;
   }
 }
-/******************************************************** MOBILE 420 */
 @media (max-width: 420px) {
   section[id] {
     scroll-margin-top: 65px;
@@ -684,7 +674,7 @@ a {
   .main_prest {
     height: 120vh;
     display: flex;
-    background: linear-gradient(rgb(255, 183, 0), #fff, rgb(23, 186, 97));
+    overflow: hidden;
   }
   .main_prest .prest-txt {
     padding-top: 0;
@@ -694,16 +684,18 @@ a {
     margin-bottom: 0;
   }
   .main_prest .prest1 {
-    width: 250px;
-    display: flex;
+    width: 230px;
     margin-top: 0;
     margin-bottom: 0;
     overflow-x: scroll;
+    padding-left: 55em;
+    border: 2px solid green;
+    background-color: rgba(255, 255, 255, 0.65);
   }
   .main_prest .prest1 img {
-    margin-left: 30px;
+    margin: 0 70px;
     border-radius: 10%;
-    box-shadow: 10px 10px 1em purple;
+    border: 10px solid purple;
   }
   .main_prest .prest3 {
     display: none;

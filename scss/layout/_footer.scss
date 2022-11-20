@@ -1,0 +1,20 @@
+.contenedor-footer {
+    display: block;
+    align-items: center;
+    background: #fff;
+
+    border-top: 2px solid rgb(186, 186, 186);
+
+    .redes {
+        padding-top: 2%;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        gap: 10%;
+    }
+
+    .copyright {
+        display: flex;
+        justify-content: center;
+    }
+}

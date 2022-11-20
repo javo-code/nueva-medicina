@@ -1,0 +1,16 @@
+.carrusel {
+    margin-top: 50px;
+    height: 90px
+}
+
+#slider {
+    width: 100%;
+    background-image: url("../assets/img/sliderObsSoc.png");
+    animation: slider 20s infinite linear;
+}
+
+@keyframes slider {
+    to {
+        background-position: 2000px;
+    }
+}

@@ -1,0 +1,80 @@
+html {
+    scroll-behavior: smooth;
+
+}
+
+section[id] {
+    scroll-margin-top: 50px;
+}
+
+body {
+    font-family: "calibri";
+    background-image: url("/assets/img/prestaciones.jpg");
+}
+
+a {
+    text-decoration: none;
+    color: $color-principal;
+    font-weight: bold;
+}
+
+.topheader {
+    box-shadow: 0 4px 5px rgb(186, 186, 186);
+    position: fixed;
+    background-color: rgb(253, 253, 253);
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.topnav {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+
+    img {
+        height: 50px;
+    }
+
+
+}
+
+.logo-mbl img {
+    display: none;
+}
+
+/**MENU**/
+.menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+        padding: 0 15px;
+
+        a {
+
+            color: $color-secundario;
+            font-size: 18px;
+            line-height: 50px;
+            text-transform: uppercase;
+        }
+
+        .login {
+            color: $color-principal;
+            font-size: 22px;
+            border-left: 1px solid $color-principal;
+            padding-left: 25px;
+
+        }
+    }
+}

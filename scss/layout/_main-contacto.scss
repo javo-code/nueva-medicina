@@ -1,0 +1,66 @@
+.main_contact {
+    height: 77vh;
+    padding: 1em;
+}
+
+.form-contact {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 8px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+        "box-c1 box-c2"
+        "box-c1 box-c2"
+        "box-c1 box-c2"
+        "box-c3 box-c3"
+    ;
+    background-image: url("../assets/img/contacto.jpg");
+    background-position: center;
+    border: 1px solid rgb(211, 211, 211);
+    border-radius: 20px;
+    @include box-shadow;
+    padding-top: 2%;
+}
+
+.box-c1 {
+    grid-area: box-c1;
+}
+
+.box-c2 {
+    grid-area: box-c2;
+    padding: 0;
+    line-height: 10px;
+}
+
+.box-c1,
+.box-c2 {
+    display: grid;
+    justify-content: center;
+    justify-self: center;
+}
+
+.box-c1 p,
+.box-c2 p {
+    justify-self: center;
+    padding-bottom: 10px;
+}
+
+
+
+.box-c3 {
+    grid-area: box-c3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 8px;
+
+    .reset,
+    .submit {
+        width: fit-content
+    }
+}

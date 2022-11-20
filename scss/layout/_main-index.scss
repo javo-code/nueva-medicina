@@ -1,0 +1,31 @@
+.main_index {
+    height: 100vh;
+    background-image: url("../assets/img/index.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        padding-top: 350px;
+        font-size: 100px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    span {
+        color: $color-secundario;
+        font-size: 35px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+}

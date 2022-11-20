@@ -1,0 +1,156 @@
+@media (max-width: 800px) {
+    section[id] {
+        scroll-margin-top: 90px;
+    }
+
+    .topnav {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+
+
+    }
+
+    .logo img {
+        display: none;
+    }
+
+    .logo-mbl img {
+        display: flex;
+        height: 50px;
+    }
+
+    .menu {
+        height: 50px;
+        gap: 15px;
+
+        li {
+
+            a {
+                font-size: 20px;
+            }
+        }
+    }
+
+    .main_index {
+        height: 100vh;
+        background-image: url("../assets/img/index-tbl.jpg");
+        background-size: cover;
+    }
+
+    .main_suc {
+        height: 87vh;
+        background-image: url("../assets/img/suc-tbl.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border: 1px solid rgb(211, 211, 211);
+        border-radius: 20px;
+        margin: 3em;
+        box-shadow: 1em 1em 15px rgb(255, 94, 0, 85%);
+        padding-left: 3%;
+
+
+        .title {
+            color: $color-principal;
+            text-shadow: 2px 2px #fff;
+        }
+
+        .vid {
+            margin-top: 5%;
+            box-shadow: 1em 1em 15px rgb(255, 94, 0, 85%);
+            border-radius: 20px;
+            border: none;
+            object-fit: cover;
+        }
+
+        .form-suc {
+            color: #fff;
+        }
+    }
+
+    .main_us {
+        .container-us {
+            width: 100%;
+            height: 65vh;
+            margin-top: 10vh;
+            overflow-y: auto;
+        }
+    }
+
+    /**** SECC CONTACTO ****/
+    .main_contact {
+        height: 77vh;
+
+        .form-contact {
+            height: 40vh;
+            line-height: 8px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-image: url("../assets/img/contacto-tbl.jpg");
+            background-size: cover;
+            border: 1px solid rgb(211, 211, 211);
+            border-radius: 20px;
+            @include box-shadow;
+            padding-top: 0%;
+            margin-top: 10%;
+            font-size: 20px
+        }
+    }
+
+    /**** SECC PRESTACIONES ****/
+
+    .main_prest {
+        height: 100vh;
+        display: flex;
+        background-image: url("/assets/img/prestaciones.jpg");
+        background: linear-gradient(rgb(255, 183, 0, 40%), rgba(30, 182, 0, 40%));
+
+        .prest-txt {
+            padding-top: 10px;
+            font-size: 40px;
+            color: #fff;
+            text-shadow: 5px 5px black;
+            margin-bottom: 0;
+        }
+
+        .prest1 {
+            display: flex;
+            margin-top: 0;
+            margin-bottom: 30px;
+
+            img {
+                margin: 10px;
+                border-radius: 10%;
+                box-shadow: 10px 10px 1em purple;
+            }
+        }
+
+        .prest2 {
+            margin-bottom: 20vh;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            margin-bottom: 0;
+
+            img {
+                width: 89%;
+                box-shadow: 6px 6px 0.5em rgb(0, 81, 0);
+                width: 75%;
+                margin-left: 10%;
+            }
+        }
+
+        .prest3 {
+            margin-top: 0;
+            width: 90%;
+            margin-bottom: -15%;
+
+            p {
+                padding-inline-start: 10px;
+                font-size: 30px;
+            }
+        }
+    }
+}

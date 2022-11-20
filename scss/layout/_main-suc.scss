@@ -1,0 +1,42 @@
+.main_suc {
+    height: 85vh;
+    background-image: url("../assets/img/sucursales.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 5%;
+    border: 1px solid rgb(211, 211, 211);
+    @include box-shadow;
+
+
+
+    .title {
+        color: #fff;
+        padding: 0;
+        font-size: 30px;
+        text-decoration: underline;
+    }
+
+    .vid {
+        width: 50%;
+        height: 59%;
+        box-shadow: 1em 1em 15px black;
+        border-radius: 20px;
+        border: 1px solid black;
+        object-fit: cover;
+
+        iframe {
+            object-fit: cover;
+            border-radius: 20px;
+
+        }
+    }
+
+    .form-suc {
+        line-height: 10px;
+    }
+
+}
