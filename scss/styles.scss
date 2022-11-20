@@ -434,7 +434,7 @@ a {
 
 .main_nutri {
     background: url("../assets/img/nutri2.jpg");
-    background-size: contain;
+    background-size: cover;
 
 }
 
@@ -551,6 +551,7 @@ a {
             align-items: center;
             background-image: url("../assets/img/contacto-tbl.jpg");
             border: 1px solid rgb(211, 211, 211);
+
             border-radius: 20px;
             @include box-shadow;
             padding-top: 0%;
@@ -711,18 +712,23 @@ a {
 
     /**** SECC CONTACTO ****/
 
-    .h2-carrusel {
-        display: none;
-
-        .carrusel {
-            display: none;
-        }
+    .main_contact {
+        height: 83vh;
 
         .form-contact {
-            background-image: url("../assets/img/contacto-tbl.jpg");
+            height: 50vh;
+            line-height: 8px;
+            display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            background-image: url("../assets/img/contacto-tbl.jpg");
+            border: 1px solid rgb(211, 211, 211);
+            border-radius: 20px;
+            @include box-shadow;
+            padding-top: 0%;
+            margin-top: 10%;
+            font-size: 20px
         }
     }
 

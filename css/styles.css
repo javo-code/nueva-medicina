@@ -389,7 +389,7 @@ a {
 
 .main_nutri {
   background: url("../assets/img/nutri2.jpg");
-  background-size: contain;
+  background-size: cover;
 }
 
 .container-kine {
@@ -620,17 +620,25 @@ a {
     text-decoration: underline;
   }
   /**** SECC CONTACTO ****/
-  .h2-carrusel {
-    display: none;
+  .main_contact {
+    height: 83vh;
   }
-  .h2-carrusel .carrusel {
-    display: none;
-  }
-  .h2-carrusel .form-contact {
-    background-image: url("../assets/img/contacto-tbl.jpg");
+  .main_contact .form-contact {
+    height: 50vh;
+    line-height: 8px;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    background-image: url("../assets/img/contacto-tbl.jpg");
+    border: 1px solid rgb(211, 211, 211);
+    border-radius: 20px;
+    border-radius: 20px;
+    margin: 3em;
+    box-shadow: 1em 1em 15px rgba(255, 94, 0, 0.85);
+    padding-top: 0%;
+    margin-top: 10%;
+    font-size: 20px;
   }
   /**** SECC SERVICIOS ****/
   .main_prest {
