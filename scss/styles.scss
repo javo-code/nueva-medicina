@@ -482,27 +482,29 @@ a {
 
     .topnav {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         margin: 0 auto;
 
 
     }
 
-    .logo {
-        padding-left: 20px;
+    .logo img {
+        display: none;
+    }
 
-        img {
-            height: 50px;
-        }
+    .logo-mbl img {
+        display: flex;
+        height: 50px;
     }
 
     .menu {
         height: 50px;
+        gap: 15px;
 
         li {
 
             a {
-                font-size: 12px;
+                font-size: 20px;
             }
         }
     }
@@ -638,13 +640,46 @@ a {
         scroll-margin-top: 65px;
     }
 
-    .logo img {
-        display: none;
-    }
-
-    .logo-mbl img {
+    .topnav {
         display: flex;
-        height: 50px;
+        justify-content: center;
+        margin: 0 auto;
+
+        .menu {
+            gap: 8px;
+
+
+            li {
+                padding: 0 15px;
+
+                .login {
+                    border-left: 1px solid $color-principal;
+                    padding: 0 10px;
+                }
+            }
+
+        }
+
+        .logo {
+            padding-left: 0;
+
+            img {
+                height: 50px;
+            }
+        }
+
+        .menu {
+            height: 50px;
+
+            li {
+                padding: 0;
+
+                a {
+                    font-size: 12px;
+                }
+            }
+        }
+
     }
 
     .main_index {
@@ -732,9 +767,9 @@ a {
         .box-c1,
         .box-c2 {
 
-            .box-c1,
+            .box-c1 p,
             .box-c2 p {
-                line-height: 16px
+                line-height: 6px
             }
         }
 
@@ -747,7 +782,7 @@ a {
             @include box-shadow;
             padding-top: 10%;
             margin-top: 0;
-            font-size: 20px
+            font-size: 20px;
         }
     }
 

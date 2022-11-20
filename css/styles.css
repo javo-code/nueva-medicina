@@ -430,20 +430,22 @@ a {
   }
   .topnav {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin: 0 auto;
   }
-  .logo {
-    padding-left: 20px;
-  }
   .logo img {
+    display: none;
+  }
+  .logo-mbl img {
+    display: flex;
     height: 50px;
   }
   .menu {
     height: 50px;
+    gap: 15px;
   }
   .menu li a {
-    font-size: 12px;
+    font-size: 20px;
   }
   .main_index {
     height: 100vh;
@@ -558,12 +560,35 @@ a {
   section[id] {
     scroll-margin-top: 65px;
   }
-  .logo img {
-    display: none;
-  }
-  .logo-mbl img {
+  .topnav {
     display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .topnav .menu {
+    gap: 8px;
+  }
+  .topnav .menu li {
+    padding: 0 15px;
+  }
+  .topnav .menu li .login {
+    border-left: 1px solid rgb(23, 186, 97);
+    padding: 0 10px;
+  }
+  .topnav .logo {
+    padding-left: 0;
+  }
+  .topnav .logo img {
     height: 50px;
+  }
+  .topnav .menu {
+    height: 50px;
+  }
+  .topnav .menu li {
+    padding: 0;
+  }
+  .topnav .menu li a {
+    font-size: 12px;
   }
   .main_index {
     height: 100vh;
@@ -635,11 +660,11 @@ a {
     padding: 0;
     margin: 0;
   }
-  .main_contact .box-c1 .box-c1,
+  .main_contact .box-c1 .box-c1 p,
 .main_contact .box-c1 .box-c2 p,
-.main_contact .box-c2 .box-c1,
+.main_contact .box-c2 .box-c1 p,
 .main_contact .box-c2 .box-c2 p {
-    line-height: 16px;
+    line-height: 6px;
   }
   .main_contact .form-contact {
     height: 70vh;
