@@ -620,21 +620,20 @@ a {
     text-decoration: underline;
   }
   /**** SECC CONTACTO ****/
-  .main_contact {
-    /**** SECC SERVICIOS ****/
-  }
-  .main_contact .h2-carrusel {
+  .h2-carrusel {
     display: none;
   }
-  .main_contact .h2-carrusel .carrusel {
+  .h2-carrusel .carrusel {
     display: none;
   }
-  .main_contact .h2-carrusel .form-contact {
+  .h2-carrusel .form-contact {
     background-image: url("../assets/img/contacto-tbl.jpg");
     justify-content: center;
     align-items: center;
+    height: 100vh;
   }
-  .main_contact .main_prest {
+  /**** SECC SERVICIOS ****/
+  .main_prest {
     height: 145vh;
     display: flex;
     flex-direction: column;
@@ -642,41 +641,41 @@ a {
     justify-content: space-around;
     background: linear-gradient(rgb(255, 183, 0), #fff);
   }
-  .main_contact .main_prest .prest-txt {
+  .main_prest .prest-txt {
     padding-top: 10px;
     font-size: 40px;
     color: #fff;
     text-shadow: 5px 5px black;
     margin-bottom: 0;
   }
-  .main_contact .main_prest .prest1 {
+  .main_prest .prest1 {
     display: flex;
     margin-top: 0;
     margin-bottom: 30px;
   }
-  .main_contact .main_prest .prest1 img {
+  .main_prest .prest1 img {
     margin: 10px;
     border-radius: 10%;
     box-shadow: 10px 10px 1em purple;
   }
-  .main_contact .main_prest .prest2 {
+  .main_prest .prest2 {
     margin-bottom: 20vh;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
     margin-bottom: 0;
   }
-  .main_contact .main_prest .prest2 img {
+  .main_prest .prest2 img {
     width: 89%;
     box-shadow: 6px 6px 0.5em rgb(0, 81, 0);
     width: 75%;
     margin-left: 10%;
   }
-  .main_contact .main_prest .prest3 {
+  .main_prest .prest3 {
     margin-top: 0;
     width: 90%;
     margin-bottom: -15%;
   }
-  .main_contact .main_prest .prest3 p {
+  .main_prest .prest3 p {
     padding-inline-start: 10px;
     font-size: 30px;
   }
